@@ -1,4 +1,9 @@
 Maderapawn::Application.routes.draw do
+
+  get "home/about"
+  get "home/contact"
+
+  root :to => 'home#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
