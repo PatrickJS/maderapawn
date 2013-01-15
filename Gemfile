@@ -2,8 +2,16 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.10'
 gem 'unicorn'
-gem 'pg'
 gem 'bootstrap-sass', '~> 2.2.2.0'
+
+group :development do
+ gem 'sqlite3'
+ gem 'meta_request'
+end
+
+group :production do
+ gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

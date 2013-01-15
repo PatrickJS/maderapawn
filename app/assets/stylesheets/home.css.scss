@@ -2,3 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+body {
+  background-image: url(https://dl.dropbox.com/u/7020515/bedge_grunge.png);
+}
+.well {
+  background-color: white;
+}
+h1 {
+  font-size: 3em;
+}
+video {
+  max-width: 100%;
+  height: auto;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
