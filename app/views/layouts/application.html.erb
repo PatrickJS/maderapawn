@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Express Cash & Loan - Madera Pawn Shop</title>
+  <title>Express Cash and Loan, Inc. - Madera Pawn Shop</title>
+  <!-- start: Mobile Specific -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- end: Mobile Specific -->
+
+  <!-- start: Facebook Open Graph -->
+  <meta property="og:title" content=""/>
+  <meta property="og:description" content=""/>
+  <meta property="og:type" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content=""/>
+  <!-- end: Facebook Open Graph -->
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+      <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
 </head>
 <body>
+<%= render "layouts/header" %>
 
 <%= yield %>
 
-<%= render "layouts/olark" %>
+<%= render "layouts/footer" %>
 
+<%= render "layouts/olark" %>
 </body>
 </html>
