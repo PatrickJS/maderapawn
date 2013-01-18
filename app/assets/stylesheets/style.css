@@ -1614,6 +1614,8 @@ a.buy:hover {
 
 #googlemaps{
 	position: relative;
+	background-image: url(https://dl.dropbox.com/u/7020515/img/contact_background.png);
+	background-color: white;
 	z-index: 1;
 	height: 550px;
 	width: 100%;

@@ -7,4 +7,13 @@ class HomeController < ApplicationController
 
   def contact
   end
+
+  def sitemap
+  end
+
+  def pawn
+  end
+
+  def loan
+  end
 end
