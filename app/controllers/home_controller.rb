@@ -11,9 +11,6 @@ class HomeController < ApplicationController
   def sitemap
   end
 
-  def pawn
-  end
-
-  def loan
+  def services
   end
 end

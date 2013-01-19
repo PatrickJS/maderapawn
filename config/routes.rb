@@ -3,8 +3,7 @@ Maderapawn::Application.routes.draw do
   get 'about' => 'home#about'
   get 'contact' => 'home#contact'
   get 'sitemap' => 'home#sitemap'
-  get 'pawn' => 'home#pawn'
-  get 'loan' => 'home#loan'
+  get 'services' => 'home#services'
   get 'faq' => 'home#faq'
 
   root :to => 'home#index'
