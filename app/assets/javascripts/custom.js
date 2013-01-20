@@ -1,4 +1,4 @@
-/* -------------------- Twitter MaderaPawn --------------------- */
+/* -------------------- Twitter --------------------- */
 
 jQuery(document).ready(function($){
 
