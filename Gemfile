@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.10'
+gem 'rails', '3.2.11'
 gem 'unicorn'
 gem 'bootstrap-sass', '~> 2.2.2.0'
 
