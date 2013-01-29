@@ -76,8 +76,8 @@
 
           <!-- start: Contact Form -->
           <div id="contact-form">
-
-            <form method="post" action="">
+            <%= flash[:alert] %>
+            <form method="post" action="/contact">
 
               <fieldset>
                 <div class="clearfix">
@@ -90,7 +90,7 @@
                 <div class="clearfix">
                   <label for="email"><span>Email:</span></label>
                   <div class="input">
-                    <input tabindex="2" size="25" id="email" name="email" type="text" value="" class="input-xlarge">
+                    <input tabindex="2" size="18" id="email" name="email" type="text" value="" class="input-xlarge">
                   </div>
                 </div>
 
