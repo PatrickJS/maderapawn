@@ -27,23 +27,11 @@
             </a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><%= link_to "Home", root_path %></li>
-                <li><%= link_to "About", about_path %></li>
-                  <!--
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                  <li><a href="social-icons.html">Social Icons</a></li>
-                  <li><a href="icons.html">Icons</a></li>
-                  <li><a href="typography.html">Typography</a></li>
-                  <li><a href="shortcodes.html">Shortcodes</a></li>
-                  <li><a href="list-styles.html">List Styles</a></li>
-                  </ul>
-                 </li>
-                    -->
-                <li><%= link_to "Services", services_path %></li>
-                <li><%= link_to "FAQ", faq_path %></li>
-                <li><%= link_to "Contact", contact_path %></li>
+                <li class="<%= 'active' if current_page?(action: :index)%>"><%= link_to "Home", root_path %></li>
+                <li class="<%= 'active' if current_page?(action: :about)%>"><%= link_to "About", about_path %></li>
+                <li class="<%= 'active' if current_page?(action: :services)%>"><%= link_to "Services", services_path %></li>
+                <li class="<%= 'active' if current_page?(action: :faq)%>"><%= link_to "FAQ", faq_path %></li>
+                <li class="<%= 'active' if current_page?(action: :contact)%>"><%= link_to "Contact", contact_path %></li>
               </ul><!-- end nav -->
             </div><!-- end nav-collapse -->
         </div><!-- end nav-inner -->
