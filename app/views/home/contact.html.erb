@@ -78,68 +78,58 @@ $('#myTab a').click(function (e) {
 
         <!-- start: Contact Form -->
         <div class="span4">
-<!--           <ul class="nav nav-tabs" id="myTab">
-            <li class="active">
-            <a href="#home"></a>General Questions</li>
-            <li><a href="#pickup">Pickup Jewelry</a></li>
-
-          </ul>
-
-          <div class="tab-content">
-            <div class="tab-pane active" id="home">
- -->              <div id="contact-form">
+              <div id="contact-form">
             <form method="post" action="/contact">
-          <div class="title-out"><h3>General Questions</h3></div>
 
                             <fieldset>
                 <div class="clearfix">
                   <label for="name"><span>Name:</span></label>
                   <div class="input">
-                    <input tabindex="1" size="18" id="name" name="name" type="text" value="">
+                    <input tabindex="1" size="18" id="name" name="name" type="text" value="" placeholder="John Joe">
                   </div>
                 </div>
 
                 <div class="clearfix">
                   <label for="email"><span>Email:</span></label>
                   <div class="input">
-                    <input tabindex="2" size="18" id="email" name="email" type="text" value="" class="input-xlarge">
+                    <input tabindex="2" size="18" id="email" name="email" type="text" value=""  placeholder="email@example.com">
                   </div>
                 </div>
 
                 <div class="clearfix">
                   <label for="email"><span>Phone:</span></label>
                   <div class="input">
-                    <input tabindex="3" size="18" id="phone" name="phone" type="text" value="" class="input-xlarge">
+                    <input tabindex="3" size="18" id="phone" name="phone" type="text" value=""  placeholder="559-555-555  (optional)">
+                  </div>
+                </div>
+
+
+
+
+
+            </div>
+          </div>
+            <div class="span4">
+
+                <div class="clearfix">
+                  <label for="subject"><span>Subject:</span></label>
+                  <div class="input">
+                    <input tabindex="4" size="18" id="subject" name="subject" type="text" value="" class="input-xlarge" placeholder="Pickup jewlry">
                   </div>
                 </div>
 
                 <div class="clearfix">
                   <label for="message"><span>Message:</span></label>
                   <div class="input">
-                    <textarea tabindex="4" class="input-xlarge" id="message" name="body" rows="7"></textarea>
+                    <textarea tabindex="5" class="input-xlarge" id="message" name="body" rows="7" placeholder="I need to pickup my jewelry on month/date/year and here is my loan/ticket number #1111111"></textarea>
                   </div>
                 </div>
 
                 <div class="actions">
-                  <button tabindex="5" type="submit" class="btn btn-succes btn-large">Send message</button>
+                  <button tabindex="6" type="submit" class="btn btn-succes btn-large">Send message</button>
                 </div>
               </fieldset>
-
-            </form>
-
-            <!--</div>
-            <div class="tab-pane" id="pickup">
- <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-  <input class="span2" size="16" type="text" value="12-02-2012">
-  <span class="add-on"><i class="icon-th"></i></span>
-</div>
- -->
-
-            </div>
-          </div>
-            <div class="span4">
-                          <h1><i><%= flash[:alert] %></i></h1>
-
+              </form>
             </div>
 
           <!-- start: Contact Form -->
@@ -148,10 +138,9 @@ $('#myTab a').click(function (e) {
 
           </div>
           <!-- end: Contact Form -->
-
+<hr>
         </div>
         <!-- end: Contact Form -->
-
       </div>
       <!-- end: Row -->
 
