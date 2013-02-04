@@ -18,8 +18,13 @@
   // background-image: url("https://dl.dropbox.com/u/7020515/MaderaPawn/gary_back.jpg")
 }
 .teampic {
-  border-radius: 10%;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
 }
+.twitter-follow-button {
+  margin-left: 10px;
+}
+
 @media only screen and (max-width: 767px) {
   #aboutpic {
   margin-top: 0px;
