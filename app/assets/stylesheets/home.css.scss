@@ -1,7 +1,16 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  text-shadow:1px 1px 0 white;
+}
+body #footer, body #footer-menu {
+  text-shadow:1px 1px 0 #666;
+}
 
+#footer-menu-links {
+  color: gray;
+}
 #about {
   font-size: 1.2em;
 }
@@ -32,6 +41,7 @@
       text-shadow:1px 1px 0 black;
     }
 }
+
 
 @media only screen and (max-width: 767px) {
   #aboutpic {
