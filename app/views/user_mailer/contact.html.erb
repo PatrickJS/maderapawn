@@ -1,5 +1,7 @@
 <img src="https://dl.dropbox.com/u/7020515/MaderaPawn/expresscashlogo.png">
-<p>This is contact information sent from your website www.maderapawn.com</p>
+<p>Hello Suzy,
+  <br>
+  This is contact information sent from your website www.maderapawn.com</p>
 <table>
   <tr>
     <td>Subject:</td>
@@ -16,10 +18,14 @@
   </tr>
 <tr>
     <td>Phone Number:</td>
-    <td><%= @options[:phone]%></td>
+    <td><a href="tel:<%=@raw_phone_number%>"><%= @options[:phone]%></a></td>
   </tr>
 <tr>
     <td>Message:</td>
     <td><%= @options[:body]%></td>
   </tr>
 </table>
+
+<p>
+-Express Cash <small>and</small> Loan<small>, Inc.</small><br>
+@MaderaPawn

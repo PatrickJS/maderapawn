@@ -9,6 +9,8 @@ gem 'turbolinks'
 group :development do
  gem 'sqlite3'
  gem 'meta_request'
+ gem 'binding_of_caller'
+ gem "better_errors"
 end
 
 group :production do

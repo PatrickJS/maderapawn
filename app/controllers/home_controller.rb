@@ -16,6 +16,6 @@ class HomeController < ApplicationController
 
   def send_contact
     UserMailer.contact(params)
-    redirect_to "/contact", alert: "Email has been sent"
+    redirect_to "/contact", notice: "Email has been sent! Thanks "
   end
 end

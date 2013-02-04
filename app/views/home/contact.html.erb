@@ -49,12 +49,19 @@ $('#myTab a').click(function (e) {
       <hr>
       <!-- start: Row -->
       <div class="row">
-
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <div id="flash" class="alert alert-<%= name == :notice ? "success" : "error" %>">
+      <a class="close" data-dismiss="alert">&#215;</a>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    </div>
+  <% end %>
+<% end %>
         <!-- start: Contact Info -->
         <div class="span3">
           <div class="title-out"><h3>Contact Info</h3></div>
           <p>
-            <i class="mini-ico-home"></i> <b>Express Cash and Loan, Inc.</b>
+            <i class="mini-ico-home"></i> <a href="http://goo.gl/maps/KogMt" target="_blank"><b>Express Cash and Loan, Inc.</b></a>
           </p>
           <p>
             <i class="mini-ico-map-marker"></i> 329 South C Street
@@ -63,13 +70,13 @@ $('#myTab a').click(function (e) {
             <i class="mini-ico-map-marker"></i> Madera, California 93638
           </p>
           <p>
-            <i class="ico-zg-iphone"></i> Phone: (559) 661-7296
+            <i class="ico-zg-iphone"></i> Phone: <a href="tel:5596617296">(559) 661-7296</a>
           </p>
           <p>
             <i class="mini-ico-print"></i> Fax: (559) 673-1775
           </p>
           <p>
-            <i class="mini-ico-envelope"></i> Email: Suzy@maderapawn.com
+            <i class="mini-ico-envelope"></i> Email: <a href="mailto:suzy@maderapawn.com?subject=Questions about Express Cash&body=I have a question about ">Suzy@maderapawn.com</a>
           </p>
           <p>
             <i class="mini-ico-globe"></i> Web: <%= link_to "maderapawn.com", root_path %>
@@ -93,14 +100,14 @@ $('#myTab a').click(function (e) {
                 <div class="clearfix">
                   <label for="email"><span>Email:</span></label>
                   <div class="input">
-                    <input tabindex="2" size="18" id="email" name="email" type="text" value=""  placeholder="email@example.com">
+                    <input tabindex="2" size="18" id="email" name="email" type="email" type="text" value=""  placeholder="email@example.com">
                   </div>
                 </div>
 
                 <div class="clearfix">
                   <label for="email"><span>Phone:</span></label>
                   <div class="input">
-                    <input tabindex="3" size="18" id="phone" name="phone" type="text" value=""  placeholder="559-555-555  (optional)">
+                    <input tabindex="3" size="18" id="phone" name="phone" type="text" value="" placeholder="559-555-555  (optional)">
                   </div>
                 </div>
 
@@ -123,7 +130,7 @@ $('#myTab a').click(function (e) {
                 </div>
 
                 <div class="actions">
-                  <button tabindex="6" type="submit" class="btn btn-succes btn-large">Send message</button>
+                  <button tabindex="6" type="submit" class="btn btn-succes btn-large" >Send message</button>
                 </div>
               </fieldset>
               </form>
