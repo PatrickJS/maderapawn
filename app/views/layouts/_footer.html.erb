@@ -1,3 +1,11 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=287480211378969";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <!-- start: Footer -->
   <div id="footer">
 
@@ -33,7 +41,6 @@
           <p>
             <i class="mini-ico-globe mini-white"></i> Web: <%= link_to "www.maderapawn.com", root_path %>
           </p>
-
         </div>
         <!-- end: About -->
         <!-- start: Maps -->
@@ -48,7 +55,6 @@
 
         <!-- start: Latest Tweets -->
         <div class="span6">
-
           <h3><%= link_to "Latest Tweets", "https://twitter.com/MaderaPawn" %> <a href="https://twitter.com/MaderaPawn" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @MaderaPawn</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></h3>
 
@@ -64,7 +70,7 @@
         </div>
         <!-- start: Find us on -->
         <div class="span3">
-          <h3>Find us on</h3>
+          <h3>Find us on  <div class="fb-like" data-href="https://www.facebook.com/MaderaPawn" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true"></div></h3>
 
           <img src="https://dl.dropbox.com/u/7020515/MaderaPawn/logos.png" usemap="#ebaygunbroker">
           <map name="ebaygunbroker">
