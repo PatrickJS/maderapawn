@@ -1,12 +1,13 @@
 Maderapawn::Application.routes.draw do
 
+  get 'sitemap' => 'home#sitemap'
+
   get 'about' => 'home#about'
+  get 'services' => 'home#services'
+  get 'faq' => 'home#faq'
   get 'contact' => 'home#contact'
   post 'contact' => 'home#send_contact'
 
-  get 'sitemap' => 'home#sitemap'
-  get 'services' => 'home#services'
-  get 'faq' => 'home#faq'
 
 
 
